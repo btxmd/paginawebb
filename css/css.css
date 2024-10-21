@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #2d4373;
+    color: rgb(235, 213, 197);
+    padding-top: 20px; /* Altura del menú fijo */
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: 100px;
+    background-color: rgb(44, 47, 48);
+    margin: 80px auto 0;
+    padding: 20px; /* Opcional: agrega padding interno */
+    box-sizing: border-box;
+
+}
+header h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 60px;
+  color: #2795e9;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  float: left;
+}
+header ul {
+    padding-left: 20px; /* Ajusta este valor según sea necesario */
+}
+nav {
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #2d4373;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+    font-size: 25px;
+    /*text-transform: uppercase;*/
+}
+.menu a:hover {
+  color: #2795e9;
+}
+.logo {
+    background: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+h2 {
+  font-size: 35px;
+  color: cornflowerblue;
+  text-align: left;
+}
+p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: justify;
+  font-size: 30px;
+}
+.pie {
+  background-color: rgb(74, 74, 139);
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.social-icons li {
+    margin: 0 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-icons a.instagram {
+    background-color: #e4405f;
+}
+
+.social-icons a.instagram:hover {
+    background-color: #bc2a8d;
+}
+
+.social-icons a.twitter {
+    background-color: #55acee;
+}
+
+.social-icons a.twitter:hover {
+    background-color: #2795e9;
+}
+article {
+    margin-top: 20px; /* Asegúrate de que coincida con la altura de tu nav */
+}
+section[id] {
+    scroll-margin-top: 100px; /* Debe ser igual a la altura del menú */
+  }
